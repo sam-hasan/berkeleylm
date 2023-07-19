@@ -70,24 +70,15 @@ public class TextReader<W> implements LmReader<LongRef, LmReaderCallback<LongRef
 		for (final String line : allLinesIterator) {
 			if (numLines % 10000 == 0) Logger.logs("On line " + numLines);
 			numLines++;
-			final String[] words = line.split("\\s+");
-			final int[] sent = new int[words.length + 2];
-			sent[0] = wordIndexer.getOrAddIndex(wordIndexer.getStartSymbol());
-			sent[sent.length - 1] = wordIndexer.getOrAddIndex(wordIndexer.getEndSymbol());
-			for (int i = 0; i < words.length; ++i) {
-				sent[i + 1] = wordIndexer.getOrAddIndexFromString(words[i]);
-			}
-			callback.call(sent, 0, sent.length, new LongRef(1L), line);
 
-			//			for (int ngramOrder = 0; ngramOrder < lmOrder; ++ngramOrder) {
-			//				for (int i = 0; i < sent.length; ++i) {
-			//					if (i - ngramOrder < 0) continue;
-			//					callback.call(sent, i - ngramOrder, i + 1, null, line);
-			//				}
-			//			}
+			// This line replaces the previous transformation logic
+			int[] sent = WordIndexer.StaticMethods.getIndexedSentence(wordIndexer, line);
+
+			callback.call(sent, 0, sent.length, new LongRef(1L), line);
 		}
 		callback.cleanup();
 	}
+
 
 	/**
 	 * @param files

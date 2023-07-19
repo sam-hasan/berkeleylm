@@ -147,5 +147,17 @@ public interface WordIndexer<W> extends Serializable
 		public static <W> List<W> toList(final WordIndexer<W> wordIndexer, final int[] intNgram) {
 			return toList(wordIndexer, intNgram, 0, intNgram.length);
 		}
+
+		public static <W> int[] getIndexedSentence(WordIndexer<W> indexer, String line) {
+			String[] words = line.split("\\s+");
+			int[] sent = new int[words.length + 2];
+			sent[0] = indexer.getOrAddIndex(indexer.getStartSymbol());
+			sent[sent.length - 1] = indexer.getOrAddIndex(indexer.getEndSymbol());
+			for (int i = 0; i < words.length; ++i) {
+				sent[i + 1] = indexer.getOrAddIndexFromString(words[i]);
+			}
+			return sent;
+		}
+
 	}
 }
