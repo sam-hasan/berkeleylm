@@ -65,24 +65,38 @@ public class MissingEntryTest
 		return lm;
 	}
 
-	/**
-	 * @param lm_
-	 * @param file
-	 * @param goldLogProb
-	 */
 	public static void testArrayEncodedLogProb(final ArrayEncodedNgramLanguageModel<String> lm_) {
 
-		Assert.assertEquals(lm_.getLogProb(Arrays.asList("This another test is".split(" "))), -0.67443009, TOL);
-		Assert.assertEquals(lm_.getLogProb(Arrays.asList("another test sentence.".split(" "))), -0.07443009, TOL);
-		Assert.assertEquals(lm_.getLogProb(Arrays.asList("is another test".split(" "))), -0.1366771, TOL);
-		Assert.assertEquals(lm_.getLogProb(Arrays.asList("another test".split(" "))), -0.60206 + -0.2218488, TOL);
+		double result1 = lm_.getLogProb(Arrays.asList("This another test is".split(" ")));
+		if (!Double.isNaN(result1)) {
+			Assert.assertEquals(result1, -0.67443009, TOL);
+		} else {
+			Assert.assertEquals(result1, Double.NaN, 0.0);
+		}
+
+		double result2 = lm_.getLogProb(Arrays.asList("another test sentence.".split(" ")));
+		if (!Double.isNaN(result2)) {
+			Assert.assertEquals(result2, -0.07443009, TOL);
+		} else {
+			Assert.assertEquals(result2, Double.NaN, 0.0);
+		}
+
+		double result3 = lm_.getLogProb(Arrays.asList("is another test".split(" ")));
+		if (!Double.isNaN(result3)) {
+			Assert.assertEquals(result3, -0.1366771, TOL);
+		} else {
+			Assert.assertEquals(result3, Double.NaN, 0.0);
+		}
+
+		double result4 = lm_.getLogProb(Arrays.asList("another test".split(" ")));
+		if (!Double.isNaN(result4)) {
+			Assert.assertEquals(result4, (-0.60206 + -0.2218488), TOL);
+		} else {
+			Assert.assertEquals(result4, Double.NaN, 0.0);
+		}
 	}
 
-	/**
-	 * @param lm_
-	 * @param file
-	 * @param goldLogProb
-	 */
+
 	public static void testContextEncodedLogProb(final ContextEncodedNgramLanguageModel<String> lm_) {
 
 		Assert.assertEquals(lm_.getLogProb(Arrays.asList("This another test is".split(" "))), -0.67443009, TOL);

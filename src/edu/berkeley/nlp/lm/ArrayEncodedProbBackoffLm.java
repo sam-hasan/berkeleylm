@@ -51,57 +51,97 @@ public class ArrayEncodedProbBackoffLm<W> extends AbstractArrayEncodedNgramLangu
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * edu.berkeley.nlp.lm.AbstractArrayEncodedNgramLanguageModel#getLogProb
-	 * (int[], int, int)
-	 */
 	@Override
 	public float getLogProb(final int[] ngram, final int startPos, final int endPos) {
-		int startPos_ = startPos;
-		while (endPos - startPos_ > lmOrder) {
-			startPos_++;	
+		int updatedStartPos = updateStartPositionBasedOnOrder(startPos, endPos);
+
+		if (isBelowMinimumLimit(endPos, updatedStartPos)) return 0.0f;
+
+		final ProbBackoffPair scratch = createScratchIfNeeded(useScratchValues);
+
+		if (isUnigramWordOutOfRange(ngram[endPos - 1])) return oovWordLogProb;
+
+		ResultContext context = calculateMatchedProbContext(ngram, endPos, updatedStartPos, scratch);
+
+		float logProb = getLogProbability(context, scratch);
+
+		if (Float.isNaN(logProb)) {
+			context = reCalculateMatchedProbContext(ngram, endPos, updatedStartPos, scratch);
+			logProb = getLogProbability(context, scratch);
 		}
-		final NgramMap<ProbBackoffPair> localMap = map;
-		if (endPos - startPos_ < 1) return 0.0f;
 
-		final ProbBackoffPair scratch = !useScratchValues ? null : new ProbBackoffPair(Float.NaN, Float.NaN);
-		final int unigramWord = ngram[endPos - 1];
-		if (unigramWord < 0 || unigramWord >= numWords) return oovWordLogProb;
+		float backoff = computeBackoff(ngram, updatedStartPos, endPos, context.order, scratch);
+		return logProb + backoff;
+	}
 
-		long matchedProbContext = unigramWord;
+	private int updateStartPositionBasedOnOrder(int startPos, int endPos) {
+		while (endPos - startPos > lmOrder) {
+			startPos++;
+		}
+		return startPos;
+	}
+
+	private boolean isBelowMinimumLimit(int endPos, int updatedStartPos) {
+		return endPos - updatedStartPos < 1;
+	}
+
+	private ProbBackoffPair createScratchIfNeeded(boolean shouldUseScratch) {
+		return shouldUseScratch ? new ProbBackoffPair(Float.NaN, Float.NaN) : null;
+	}
+
+	private boolean isUnigramWordOutOfRange(int unigramWord) {
+		return unigramWord < 0 || unigramWord >= numWords;
+	}
+
+	private ResultContext calculateMatchedProbContext(int[] ngram, int endPos, int updatedStartPos, ProbBackoffPair scratch) {
+		long matchedProbContext = ngram[endPos - 1];
 		int matchedProbContextOrder = -1;
-		for (int i = endPos - 2; i >= startPos_; --i) {
+		for (int i = endPos - 2; i >= updatedStartPos; --i) {
 			final int probContextOrder = endPos - i - 2;
-			final long probContext = localMap.getValueAndOffset(matchedProbContext, probContextOrder, ngram[i], scratch);
+			final long probContext = map.getValueAndOffset(matchedProbContext, probContextOrder, ngram[i], scratch);
 			if (probContext < 0) break;
 			matchedProbContext = probContext;
 			matchedProbContextOrder = probContextOrder;
 		}
-		float logProb = scratch == null ? values.getProb(matchedProbContextOrder + 1, matchedProbContext) : scratch.prob;
-		if (Float.isNaN(logProb)) {
-			// this was a fake entry, let's do it again, but only keep track of the biggest match which was not fake
-			matchedProbContext = 0;
-			matchedProbContextOrder = -1;
-			for (int i = endPos - 1; i >= startPos_; --i) {
-				final int probContextOrder = endPos - i - 2;
-				final long probContext = localMap.getValueAndOffset(matchedProbContext, probContextOrder, ngram[i], scratch);
-				if (probContext < 0) break;
-				final float tmpProb = scratch == null ? values.getProb(probContextOrder + 1, probContext) : scratch.prob;
-				if (!Float.isNaN(tmpProb)) {
-					logProb = tmpProb;
-					matchedProbContext = probContext;
-					matchedProbContextOrder = probContextOrder;
-				}
+		return new ResultContext(matchedProbContext, matchedProbContextOrder);
+	}
+
+	private float getLogProbability(ResultContext context, ProbBackoffPair scratch) {
+		return scratch == null ? values.getProb(context.order + 1, context.value) : scratch.prob;
+	}
+
+	private ResultContext reCalculateMatchedProbContext(int[] ngram, int endPos, int updatedStartPos, ProbBackoffPair scratch) {
+		long matchedProbContext = 0;
+		int matchedProbContextOrder = -1;
+		for (int i = endPos - 1; i >= updatedStartPos; --i) {
+			final int probContextOrder = endPos - i - 2;
+			final long probContext = map.getValueAndOffset(matchedProbContext, probContextOrder, ngram[i], scratch);
+			if (probContext < 0) break;
+			final float tmpProb = scratch == null ? values.getProb(probContextOrder + 1, probContext) : scratch.prob;
+			if (!Float.isNaN(tmpProb)) {
+				matchedProbContext = probContext;
+				matchedProbContextOrder = probContextOrder;
 			}
 		}
-
-		final float backoff = matchedProbContextOrder == endPos - startPos_ - 2 || endPos - startPos_ <= 1 ? 0.0f : getBackoffSum(ngram, startPos_, endPos,
-			localMap, matchedProbContextOrder, scratch);
-		return logProb + backoff;
+		return new ResultContext(matchedProbContext, matchedProbContextOrder);
 	}
+
+	private float computeBackoff(final int[] ngram, int updatedStartPos, int endPos, int matchedProbContextOrder, ProbBackoffPair scratch) {
+		return matchedProbContextOrder == endPos - updatedStartPos - 2 || endPos - updatedStartPos <= 1
+				? 0.0f
+				: getBackoffSum(ngram, updatedStartPos, endPos, map, matchedProbContextOrder, scratch);
+	}
+
+	private static class ResultContext {
+		final long value;
+		final int order;
+
+		public ResultContext(long value, int order) {
+			this.value = value;
+			this.order = order;
+		}
+	}
+
 
 	/**
 	 * @param ngram
