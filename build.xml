@@ -92,6 +92,7 @@
 	<target name="javadoc">
 		<mkdir dir="${doc}" />
 		<javadoc packagenames="edu.berkeley.nlp.lm.*" overview="${src}/overview.html" classpath="${cli}" sourcepath="${src}" destdir="${doc}" author="true" version="true" charset="utf-8">
+			<arg value="-Xdoclint:none" />
 			<link href="http://download.oracle.com/javase/6/docs/api/" />
 		</javadoc>
 	</target> 
