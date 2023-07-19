@@ -64,19 +64,21 @@ public final class BitStream
 	 * @return the number of consecutive zeros (plus 1)
 	 */
 	public int nextConsecutiveZeros() {
-		final int numberOfLeadingZerosOnThisWord = Long.numberOfLeadingZeros(currLong);
-		final int numLeft = Long.SIZE - relBit;
-		if (numberOfLeadingZerosOnThisWord >= numLeft) {
+		final int leadingZerosOnThisWord = Long.numberOfLeadingZeros(currLong);
+		final int remainingBits = Long.SIZE - relBit;
+
+		if (leadingZerosOnThisWord >= remainingBits) {
 			advanceToNextLong();
-			final int numberOfLeadingZerosOnNextWord = Long.numberOfLeadingZeros(currLong);
-			advanceWithinCurrLong(numberOfLeadingZerosOnNextWord + 1);
-			return numberOfLeadingZerosOnNextWord + 1 + numLeft;
+			final int leadingZerosOnNextWord = Long.numberOfLeadingZeros(currLong);
+			advanceWithinCurrLong(leadingZerosOnNextWord + 1);
+			return leadingZerosOnNextWord + 1 + remainingBits;
 		} else {
-			final int headerLength = numberOfLeadingZerosOnThisWord + 1;
+			final int headerLength = leadingZerosOnThisWord + 1;
 			advanceWithinCurrLong(headerLength);
 			return headerLength;
 		}
 	}
+
 
 	/**
 	 * Read and return next n bits.
