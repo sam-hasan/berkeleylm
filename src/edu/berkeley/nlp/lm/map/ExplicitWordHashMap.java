@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import edu.berkeley.nlp.lm.array.CustomWidthArray;
 import edu.berkeley.nlp.lm.array.LongArray;
+import edu.berkeley.nlp.lm.array.SearchParameters;
 import edu.berkeley.nlp.lm.collections.Iterators;
 import edu.berkeley.nlp.lm.util.Annotations.PrintMemoryCount;
 import edu.berkeley.nlp.lm.util.MurmurHash;
@@ -50,7 +51,9 @@ final class ExplicitWordHashMap implements Serializable, HashMap
 		if (hash < 0) return -1L;
 		final long rangeStart = 0;
 		final long rangeEnd = keysSize;
-		final long i = keys.linearSearch(key, rangeStart, rangeEnd, hash, EMPTY_KEY, true);
+		SearchParameters params = new SearchParameters(key, rangeStart, rangeEnd, hash, EMPTY_KEY, true);
+		final long i = keys.linearSearch(params);
+//		final long i = keys.linearSearch(key, rangeStart, rangeEnd, hash, EMPTY_KEY, true);
 		if (keys.get(i) == EMPTY_KEY) {
 			numFilled++;
 			if (numFilled >= keysSize) { throw new RuntimeException("Hash map is full with " + keysSize + " keys. Should never happen."); }
@@ -74,7 +77,8 @@ final class ExplicitWordHashMap implements Serializable, HashMap
 		final long startIndex = hash;
 		assert startIndex >= rangeStart;
 		assert startIndex < rangeEnd;
-		return keys.linearSearch(key, rangeStart, rangeEnd, startIndex, EMPTY_KEY, false);
+		SearchParameters params = new SearchParameters(key, rangeStart, rangeEnd, hash, EMPTY_KEY, true);
+		return keys.linearSearch(params);
 	}
 
 	@Override

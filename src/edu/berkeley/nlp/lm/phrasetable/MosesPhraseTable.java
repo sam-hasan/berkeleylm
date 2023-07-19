@@ -65,6 +65,12 @@ public class MosesPhraseTable implements Serializable
 		final long offsetForNgram = map.getOffsetForNgramInModel(src, startPos, endPos);
 		if (offsetForNgram < 0) return Collections.emptyList();
 		final TargetTranslationsValues scratch = new PhraseTableValueContainer.TargetTranslationsValues();
+
+		// Check and initialize the targetTranslationOffsets array if it is null
+		if (scratch.targetTranslationOffsets == null) {
+			scratch.targetTranslationOffsets = new long[0]; // Replace 0 with the appropriate length
+		}
+
 		map.getValues().getFromOffset(offsetForNgram, endPos - startPos - 1, scratch);
 		final List<TargetSideTranslation> ret = new ArrayList<TargetSideTranslation>();
 		for (int i = 0; i < scratch.targetTranslationOffsets.length; ++i) {
@@ -90,8 +96,8 @@ public class MosesPhraseTable implements Serializable
 			ret.add(tr);
 		}
 		return ret;
-
 	}
+
 
 	public WordIndexer<String> getWordIndexer() {
 		return wordIndexer;

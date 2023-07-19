@@ -251,8 +251,14 @@ public final class LongArray implements Serializable
 			setAndGrowIfNeeded(i, l);
 	}
 
-	public long linearSearch(final long key, final long rangeStart, final long rangeEnd, final long startIndex, final long emptyKey,
-		final boolean returnFirstEmptyIndex) {
+	public long linearSearch(SearchParameters params) {
+		long key = params.getKey();
+		long rangeStart = params.getRangeStart();
+		long rangeEnd = params.getRangeEnd();
+		long startIndex = params.getStartIndex();
+		long emptyKey = params.getEmptyKey();
+		boolean returnFirstEmptyIndex = params.shouldReturnFirstEmptyIndex();
+
 		for (long i = startIndex; i < rangeEnd; ++i) {
 			final long searchKey = getHelp(i);
 			if (searchKey == key) return i;
@@ -265,6 +271,7 @@ public final class LongArray implements Serializable
 		}
 		return -1L;
 	}
+
 
 	public void incrementCount(final long index, final long count) {
 		if (index >= size) {

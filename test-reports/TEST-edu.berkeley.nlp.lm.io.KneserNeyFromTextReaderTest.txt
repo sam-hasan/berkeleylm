@@ -1,7 +1,7 @@
 Testsuite: edu.berkeley.nlp.lm.io.KneserNeyFromTextReaderTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec
 
-Testcase: testBigram took 0.022 sec
-Testcase: testBig took 0.213 sec
-Testcase: testFivegram took 0.002 sec
-Testcase: testTrigram took 0.001 sec
+Testcase: testTrigram took 0.023 sec
+Testcase: testFivegram took 0.006 sec
+Testcase: testBigram took 0.002 sec
+Testcase: testBig took 0.206 sec
