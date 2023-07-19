@@ -1,23 +1,23 @@
 Testsuite: edu.berkeley.nlp.lm.io.PerplexityTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.644 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 sec
 
-Testcase: test took 0.075 sec
-Testcase: testTinyContextEncodedUnranked took 0.025 sec
-Testcase: testCachedTinyContextEncoded took 0.026 sec
-Testcase: testCachedTinyContextEncodedUnranked took 0.017 sec
-Testcase: testCachedContextEncodedUnranked took 0.022 sec
-Testcase: testTiny took 0.013 sec
-Testcase: testCached took 0.02 sec
-Testcase: testTinyUnranked took 0.012 sec
-Testcase: testBigNgram took 0.021 sec
-Testcase: testTinyContextEncoded took 0.014 sec
-Testcase: testPredict took 0.014 sec
-Testcase: testUnranked took 0.013 sec
-Testcase: testCompressed took 0.184 sec
-Testcase: testCompressedCached took 0.07 sec
+Testcase: test took 0.078 sec
+Testcase: testTinyUnranked took 0.022 sec
+Testcase: testBigNgram took 0.02 sec
+Testcase: testTinyContextEncoded took 0.019 sec
+Testcase: testPredict took 0.017 sec
+Testcase: testUnranked took 0.015 sec
+Testcase: testCompressed took 0.111 sec
+Testcase: testCompressedCached took 0.059 sec
 Testcase: testContextEncoded took 0.024 sec
-Testcase: testContextEncodedUnranked took 0.016 sec
-Testcase: testCachedTiny took 0.015 sec
-Testcase: testCachedTinyUnranked took 0.012 sec
-Testcase: testCachedUnranked took 0.015 sec
-Testcase: testCachedContextEncoded took 0.022 sec
+Testcase: testContextEncodedUnranked took 0.02 sec
+Testcase: testCachedTiny took 0.017 sec
+Testcase: testCachedTinyUnranked took 0.016 sec
+Testcase: testCachedUnranked took 0.018 sec
+Testcase: testCachedContextEncoded took 0.023 sec
+Testcase: testTiny took 0.014 sec
+Testcase: testCached took 0.02 sec
+Testcase: testTinyContextEncodedUnranked took 0.013 sec
+Testcase: testCachedTinyContextEncoded took 0.016 sec
+Testcase: testCachedTinyContextEncodedUnranked took 0.014 sec
+Testcase: testCachedContextEncodedUnranked took 0.018 sec
