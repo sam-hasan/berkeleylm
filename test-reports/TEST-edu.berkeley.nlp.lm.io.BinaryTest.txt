@@ -1,5 +1,5 @@
 Testsuite: edu.berkeley.nlp.lm.io.BinaryTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 sec
 
-Testcase: testContextEncodedBinary took 0.126 sec
-Testcase: testArrayEncodedBinary took 0.179 sec
+Testcase: testContextEncodedBinary took 0.123 sec
+Testcase: testArrayEncodedBinary took 0.232 sec

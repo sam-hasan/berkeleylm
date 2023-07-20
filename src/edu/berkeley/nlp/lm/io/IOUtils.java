@@ -33,7 +33,10 @@ import edu.berkeley.nlp.lm.util.StrUtils;
  * 
  * @author adampauls
  * @author Percy Liang
- * 
+ * This class has been labelled 'deprecated' by a developer to inform that this class has the code smell of Insufficient
+ * Modularization and thus this class has been broken down into four more classes called IOFileUtils, IOObjUtils, IOTextUtils
+ * and IOStreamUtils which have the functionality for all the methods in this original IOUtils. This improves the lack of
+ * cohesion as well as a seperation of concern for the application.
  */
 @Deprecated
 public class IOUtils
