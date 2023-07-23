@@ -1,8 +1,8 @@
 Testsuite: edu.berkeley.nlp.lm.io.GoogleReaderTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
 
-Testcase: testCompressed took 0.038 sec
-Testcase: testHashCached took 0.01 sec
+Testcase: testHashCached took 0.025 sec
+Testcase: testCompressed took 0.011 sec
 Testcase: testHashKneserNey took 0.005 sec
-Testcase: testCompressedKneserNey took 0.003 sec
-Testcase: testHash took 0.003 sec
+Testcase: testCompressedKneserNey took 0.004 sec
+Testcase: testHash took 0.014 sec

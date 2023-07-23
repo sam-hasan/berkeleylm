@@ -1,0 +1,4 @@
+Extracting code smells...
+Exception while parsing literal number (during Magic Number detection). For input string: "c6a4a7935bd1e995" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "c6a4a7935bd1e995" under radix 16
+Done.

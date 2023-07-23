@@ -1,0 +1,459 @@
+Project Name,Package Name,Type Name,Method Name,Code Smell
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableTest,testPhraseTable,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableTest,testPhraseTable,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableTest,testPhraseTable,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableTest,testPhraseTable,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableTest,testPhraseTable,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,PhraseTableValueContainer,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,PhraseTableValueContainer,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,PhraseTableValueContainer,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,add,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addNewSrcPhrase,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addNewSrcPhrase,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addNewSrcPhrase,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addNewSrcPhrase,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addFeaturesForWholePhrase,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addFeaturesForWholePhrase,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addFeaturesForWholePhrase,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,addFeaturesForWholePhrase,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,growValueIndexArrayIfNecessary,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,growValueIndexArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,PhraseTableValueContainer,growValueIndexArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReaderCallback,MosesPhraseTableReaderCallback,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReaderCallback,MosesPhraseTableReaderCallback,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReaderCallback,MosesPhraseTableReaderCallback,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReaderCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReaderCallback,call,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Long Statement
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.phrasetable,MosesPhraseTableReader,countPhrases,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,getContextEncodedLm,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,getLm,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MissingEntryTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,testHash,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,testHashCached,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,testCompressed,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,testHashKneserNey,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,testCompressedKneserNey,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScores,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScoresKneserNey,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScoresKneserNey,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleReaderTest,checkScoresKneserNey,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testBigNgram,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testBigNgram,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testPredict,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testPredict,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testPredict,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCompressed,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCompressedCached,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCompressedCached,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCompressedCached,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTiny,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTiny,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyContextEncoded,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyContextEncoded,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyContextEncodedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedTinyContextEncodedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCached,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCached,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedContextEncoded,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedContextEncoded,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedContextEncodedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testCachedContextEncodedUnranked,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,getContextEncodedLm,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,getLm,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testContextEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,PerplexityTest,testArrayEncodedLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,doTest,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFromTextReaderTest,compareLines,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testContextEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testContextEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testContextEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testArrayEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testArrayEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,BinaryTest,testArrayEncodedBinary,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Complex Method
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,JavaMapWrapperTest,testBothMapWrapper,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleLmReader,parse,Complex Method
+berkeley,edu.berkeley.nlp.lm.io,GoogleLmReader,parse,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,GoogleLmReader,addToIndexer,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,IOStreamUtils,copy,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,IOStreamUtils,copy,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,IOUtils,copy,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,IOUtils,copy,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readArrayEncodedLmFromArpa,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readNgramMapFromGoogleNgramDir,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readLmFromGoogleNgramDir,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readLmFromGoogleNgramDir,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readKneserNeyLmFromTextFile,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readContextEncodedKneserNeyLmFromTextFile,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,readKneserNeyLmFromTextFile,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,createKneserNeyLmFromTextFiles,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassContextEncoded,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassContextEncoded,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassContextEncoded,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassArrayEncoded,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassArrayEncoded,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassGoogle,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassGoogle,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,secondPassGoogle,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,buildMapArpa,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,buildMapArpa,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,buildMapArpa,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,buildMapCommon,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,createNgramMap,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,LmReaders,createNgramMap,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,MakeKneserNeyArpaFromText,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MakeKneserNeyArpaFromText,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,ArpaLmReader,parseNGrams,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,KneserNeyLmReaderCallback,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,addNgram,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,addNgram,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getHighestOrderProb,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getLowerOrderProb,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getLowerOrderBackoff,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getDiscountForOrder,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getDiscountForOrder,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getCounts,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getCounts,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Complex Method
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,parse,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getProbBackoff,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyLmReaderCallback,getProbBackoff,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,TextReader,countNgrams,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,TextReader,getLineIterator,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,FirstPassCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,FirstPassCallback,allocatedNumNgramArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,FirstPassCallback,allocatedNumNgramArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,FirstPassCallback,allocatedNumNgramForOrderArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,FirstPassCallback,allocatedNumNgramForOrderArrayIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,KneserNeyFileWritingLmReaderCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,NgramMapAddingCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.io,MakeLmBinaryFromGoogle,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,MakeNgramMapBinaryFromGoogle,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,ComputeLogProbabilityOfTextStream,computeProb,Long Statement
+berkeley,edu.berkeley.nlp.lm.io,MakeLmBinaryFromArpa,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.io,LmReaderCallback,call,Long Parameter List
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,calculateMatchedProbContext,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,calculateMatchedProbContext,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,reCalculateMatchedProbContext,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,computeBackoff,Long Parameter List
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,computeBackoff,Long Statement
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,computeBackoff,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,getBackoffSum,Long Parameter List
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,getBackoffSum,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,getBackoffSum,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,getBackoffSum,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedProbBackoffLm,getBackoffSum,Magic Number
+berkeley,edu.berkeley.nlp.lm,WordIndexer,getIndexedSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,StaticMethods,getIndexedSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,NgramLanguageModel,sample,Magic Number
+berkeley,edu.berkeley.nlp.lm,NgramLanguageModel,getDistributionOverNextWords,Magic Number
+berkeley,edu.berkeley.nlp.lm,StaticMethods,sample,Magic Number
+berkeley,edu.berkeley.nlp.lm,StaticMethods,getDistributionOverNextWords,Magic Number
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedNgramLanguageModel,scoreSentence,Long Statement
+berkeley,edu.berkeley.nlp.lm,ArrayEncodedNgramLanguageModel,scoreSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,DefaultImplementations,scoreSentence,Long Statement
+berkeley,edu.berkeley.nlp.lm,DefaultImplementations,scoreSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,StupidBackoffLm,getRawCount,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedNgramLanguageModel,scoreSentence,Long Statement
+berkeley,edu.berkeley.nlp.lm,ContextEncodedNgramLanguageModel,scoreSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedNgramLanguageModel,getLogProb,Long Statement
+berkeley,edu.berkeley.nlp.lm,DefaultImplementations,scoreSentence,Long Statement
+berkeley,edu.berkeley.nlp.lm,DefaultImplementations,scoreSentence,Magic Number
+berkeley,edu.berkeley.nlp.lm,DefaultImplementations,getLogProb,Long Statement
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Complex Method
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Long Statement
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm,ContextEncodedProbBackoffLm,getLogProb,Magic Number
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedDirectMappedLmCache,getCached,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedDirectMappedLmCache,getCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedDirectMappedLmCache,putCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedDirectMappedLmCache,putCached,Long Statement
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedDirectMappedLmCache,ArrayEncodedDirectMappedLmCache,Magic Number
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedDirectMappedLmCache,getCached,Long Statement
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedDirectMappedLmCache,equals,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedDirectMappedLmCache,putCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedCachingLmWrapper,wrapWithCacheNotThreadSafe,Magic Number
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedCachingLmWrapper,wrapWithCacheThreadSafe,Magic Number
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedLmCache,putCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedLmCache,getCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ContextEncodedLmCache,putCached,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedCachingLmWrapper,wrapWithCacheNotThreadSafe,Magic Number
+berkeley,edu.berkeley.nlp.lm.cache,ArrayEncodedCachingLmWrapper,wrapWithCacheThreadSafe,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,LongRef,hashCode,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,LongRef,hashCode,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,SystemLogger,Long Statement
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,Logger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,SystemLogger,Long Statement
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,SystemLogger,timeString,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hash32,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hash32,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hash32,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hash32,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hash32,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashOneLong,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashOneLong,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Magic Number
+berkeley,edu.berkeley.nlp.lm.util,MurmurHash,hashThreeLongs,Missing default
+berkeley,edu.berkeley.nlp.lm.array,CustomWidthArray,setAndGrowIfNeeded,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,CustomWidthArray,setAndGrowIfNeeded,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,CustomWidthArray,linearSearch,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.array,LongArray,newLongArray,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,LongArray,ensureCapacity,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,LongArray,ensureCapacity,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,LongArray,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,LongArray,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,LongArray,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,StaticMethods,newLongArray,Magic Number
+berkeley,edu.berkeley.nlp.lm.array,SearchParameters,SearchParameters,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,KneserNeyCountValueContainer,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,KneserNeyCountValueContainer,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,createFreshValues,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,getFromOffset,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Complex Method
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,KneserNeyCountValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,getProbBackoff,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,numProbBackoffBits,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,add,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,add,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,add,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,add,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,UnrankedUncompressedProbBackoffValueContainer,setSizeAtLeast,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,RankedValueContainer,add,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,RankedValueContainer,add,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,RankedValueContainer,add,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,RankedValueContainer,setSizeAtLeast,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,CompressibleProbBackoffValueContainer,CompressibleProbBackoffValueContainer,Complex Method
+berkeley,edu.berkeley.nlp.lm.values,CompressibleProbBackoffValueContainer,CompressibleProbBackoffValueContainer,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,CompressibleProbBackoffValueContainer,CompressibleProbBackoffValueContainer,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,CompressibleProbBackoffValueContainer,createFreshValues,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,CompressibleProbBackoffValueContainer,getCountRank,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UncompressedProbBackoffValueContainer,UncompressedProbBackoffValueContainer,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,UncompressedProbBackoffValueContainer,createFreshValues,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,UncompressedProbBackoffValueContainer,getFromRank,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,CountValueContainer,CountValueContainer,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,CountValueContainer,createFreshValues,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,ValueContainer,add,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.values,ProbBackoffPair,hashCode,Magic Number
+berkeley,edu.berkeley.nlp.lm.values,ProbBackoffPair,round,Long Statement
+berkeley,edu.berkeley.nlp.lm.values,ProbBackoffPair,round,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,NgramsForOrderMapWrapper,entrySet,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramsForOrderMapWrapper,size,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,ImplicitWordHashMap,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,getWordForContext,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,getKey,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,wordRangeAt,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,wordRangeAt,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,wordRangeAt,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,setWordRangeStart,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,setWordRangeStart,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,setWordRangeStart,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,setWordRangeStart,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,ImplicitWordHashMap,setWordRangeStart,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,NgramIterableWrapper,NgramIterableWrapper,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramIterableWrapper,iterator,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramIterableWrapper,size,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,ExplicitWordHashMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,NgramsForOrderIterableWrapper,iterator,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,put,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,put,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,compress,Complex Method
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,compress,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,compress,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,logCompressionInfo,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,logCompressionInfo,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,decompressLinearSearch,Complex Method
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,decompressLinearSearch,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,decompressSearch,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,binarySearchBlocks,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,CompressedNgramMap,binarySearchBlocks,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,AbstractNgramMap,AbstractNgramMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getRangeSizeForWord,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,HashNgramMap,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelp,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelp,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelp,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelp,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putWithOffset,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putWithOffsetAndSuffix,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehashIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehashIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehashIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehashIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehashIfNecessary,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelp,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelpWithSuffixIndex,Long Parameter List
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,putHelpWithSuffixIndex,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getNgramFromContextEncoding,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getNgramFromContextEncodingHelp,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getOffsetHelpFromMap,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Complex Method
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,rehash,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,getMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,wordHasBigrams,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,HashNgramMap,wordHasBigrams,Magic Number
+berkeley,edu.berkeley.nlp.lm.map,NgramMapWrapper,entrySet,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramMapWrapper,entrySet,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramMapWrapper,iterator,Long Statement
+berkeley,edu.berkeley.nlp.lm.map,NgramMapWrapper,size,Long Statement
+berkeley,edu.berkeley.nlp.lm.bits,BitUtils,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,argmax,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,max,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,getCapacity,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,switchMapType,Complex Method
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,hash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,findHelper,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,findHelper,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.collections,TIntMap,findHelper,Complex Method
+berkeley,edu.berkeley.nlp.lm.collections,LongToIntHashMap,LongToIntHashMap,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongToIntHashMap,toSize,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongToIntHashMap,rehash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongToIntHashMap,getInitialPos,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongToIntHashMap,getObjectsSortedByValue,Long Statement
+berkeley,edu.berkeley.nlp.lm.collections,Counter,maxMinHelp,Complex Conditional
+berkeley,edu.berkeley.nlp.lm.collections,Counter,toStringSortedByKeys,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,Counter,main,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongHashSet,LongHashSet,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongHashSet,toSize,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongHashSet,rehash,Magic Number
+berkeley,edu.berkeley.nlp.lm.collections,LongHashSet,getInitialPos,Magic Number
